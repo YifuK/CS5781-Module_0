@@ -85,7 +85,6 @@ class Module:
             if module._modules:
                 for name in module._modules:
                     add_children(module._modules[name], current_name + name + ".")
-
         add_children(self, current_name)
         return result
         # raise NotImplementedError("Need to implement for Task 0.4")
